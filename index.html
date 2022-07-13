@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,400&family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(242, 233, 226);
+        width: 1440px;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .flex-container{
+        display: flex;
+      }
+
+      .left_box{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 250px;
+        height: 400px;
+      }
+
+      .left_box img{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 250px;
+        height: 400px;
+      }
+
+      .right_box{
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 250px;
+        height: 400px;
+        background-color: hsl(0, 0%, 100%);
+      
+      }
+
+      .p1{
+        font-family: 'Fraunces', serif;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: 250;
+      }
+
+      .p2{
+        font-family: 'Fraunces', serif;
+        font-size: 30px;
+        font-weight: 500, 700;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+
+      @media screen and (max-width:430px) {
+        .flex-container{
+          margin-top: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .left_box img{
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border-bottom-left-radius: 0px;
+          width: 350px;
+          height: 400px;
+          
+        }
+        .right_box{
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: 0px;
+          width: 350px;
+          height: 400px;
+        }
+        .left_box{
+          width: 350px;
+          height: 400px;
+        }
+      }
+
+      .p3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: hsl(228, 12%, 48%);
+      }
+
+      .p4{
+        display: inline-block;
+        font-family: 'Fraunces', serif;
+        font-size: 30px;
+        font-weight: 500, 700;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: hsl(158, 36%, 37%);
+      }
+
+      .p5{
+        display: inline-block;
+        font-family: 'Fraunces', serif;
+        font-size: 12px;
+        font-weight: 500, 700;
+        margin-top: 10px;
+        margin-left: 20px;
+        position: relative;
+        bottom: 10px;
+      text-decoration: line-through;
+      }
+
+      .p6{
+        border: 1px solid;
+        background-color: hsl(158, 36%, 37%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 20px;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px;
+        align-content: center;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="left_box">
+      <img src="/images/image-product-desktop.jpg" alt="">
+    </div>
+    <div class="right_box">
+        <div class="p1">P E R F U M E</div>
+        <div class="p2">Gabrielle Essence Eau De Parfum</div>
+        <div class="p3">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</div>
+        <div class="p4">$149.99</div>
+        <div class="p5">$169.99</div>
+        <div class="p6"> <img src="/images/icon-cart.svg"> Add to Cart</div>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
